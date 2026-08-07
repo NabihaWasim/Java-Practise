@@ -8,13 +8,19 @@ public class Maths_formula {
         System.out.print("Height of triangle-");
         double height=value.nextDouble();
         double area=(0.5*breadth*height);
-        System.out.print("Area of triangle is "+area);
+        System.out.println("Area of triangle is "+area);
         //Simple Interest and Compound Interest
+        System.out.println("Enter principal amount,rate, and time-");
+        int principal=value.nextInt();
+        float rate=value.nextFloat();
+        int time=value.nextInt();
+        float simple_interest=((principal*rate*time)/100);
+        System.out.println("Simple ineterst is- "+simple_interest);
         //Fahrenhite to Celcius
-
-
-    
-        
+        System.out.println("Enter temperature in celcius-");
+        int temp=value.nextInt();
+        float temperature=((temp*9/5)+32);
+        System.out.println("Temperature in fahrenhite is- "+temperature);
     }
     
 }
